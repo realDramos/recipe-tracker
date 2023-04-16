@@ -54,7 +54,24 @@ table {
   text-overflow: ellipsis;
 }
 
-/* Column Size for thead */
+.photo{
+  object-fit: scale-down;
+  width: 100%;
+  height:100%;
+}
 
+h1{
+  font-family: 'Playfair Display Sc';
+  text-align: center;
+  font-size: 64px;
+}
+
+.recipe-list tbody tr:nth-child(odd){
+  background-color: #fff0c7;
+}
+/* Column Size for thead */
+tr>td:nth-child(n){
+  width: 10%;
+}
 
 /* Column size for tbody */
