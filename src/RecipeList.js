@@ -23,7 +23,7 @@ function RecipeList({recipes, deleteRecipes}) {
         </thead>
         <tbody>
           {/* this maps over the recipe objects and creates a new row of information */}
-          {recipes.map(recipe=><Recipe recipe={recipe} key={recipe.name} deleteRecipes={deleteRecipes}/>)}
+          {recipes.map((recipe,index)=><Recipe recipe={recipe} key={index} deleteRecipes={()=>deleteRecipes(index)}/>)}
         </tbody>
       </table>
     </div>

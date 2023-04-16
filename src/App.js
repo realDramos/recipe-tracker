@@ -16,8 +16,8 @@ function App() {
   }
 
   //how the app handles the deletion of recipes
-  const deleteRecipes = (deleteRecipe)=>{
-    let filteredRecipes = recipes.filter(recipe=> recipe !== deleteRecipe);
+  const deleteRecipes = (indexToDelete)=>{
+    let filteredRecipes = recipes.filter((recipe, index)=> index !== indexToDelete);
     setRecipes(filteredRecipes);
   }
   // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
